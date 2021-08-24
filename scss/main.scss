@@ -1,0 +1,77 @@
+/*
+подключение файлов стилей блоков и элементов
+**********************************/
+@import "vars";
+@import "libs";
+@import "layout/index";
+@import "components/index";
+
+/*
+глобальные стили
+**********************************/
+.wrapper,
+html,
+body {
+	height: 100%;
+	font-size: 16px;
+	color: #333333;
+	min-width: 320px;
+	overflow-x: hidden;
+}
+a {
+	color: inherit;
+}
+body {
+	line-height: 1;
+	font-family: "Montserrat", sans-serif;
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 59px;
+}
+h3 {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.header,
+.footer {
+	flex-shrink: 0;
+}
+
+.container {
+	max-width: 1140px;
+	width: 100%;
+	position: relative;
+}
+.hidden {
+	display: none;
+}
+/*
+main
+**********************************/
+
+.main {
+	flex: 1;
+}
+.section {
+	padding: 50px 0px;
+
+	&_gray {
+		background-color: #f8f6f7;
+	}
+	&__title {
+		margin: 0 0 32px 0;
+	}
+}
+@import "media";
